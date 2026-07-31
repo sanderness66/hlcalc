@@ -1,0 +1,46 @@
+.TH hcalc 1 31-JUL-2026 "Kozmix Go"
+
+.SH NAME
+hcalc \- calculate capacitance, resistance and/or frequency of high pass or low pass filters
+
+.SH SYNOPSIS
+.B hcalc
+[C=val] [R=val] [F=val]
+
+.SH DESCRIPTION
+.BR hcalc,
+given any two out of capacitance, resistance or frequency, will calculate the
+other two values. You must call
+.B hcalc
+with exactly two arguments.
+
+.SH OPTIONS
+
+.B hcalc
+accepts SI prefixes (k, M, μ etc.) as part of its command line
+options, which are:
+
+.TP
+.B C=val
+specify capacitance in Farad
+.TP
+.B R=val
+specify resistance in ohms
+.TP
+.B F=val
+specify frequency in Hertz
+
+.TP
+All arguments are case insensitive. The SI prefixes are not.
+
+.SH EXAMPLE
+.EX
+$ hlcalc  r=1M c=2.2n
+resistance   R = 1 MΩ
+capacitance  C = 2.2 nF
+frequency    F = 72.34 Hz
+.EE
+
+.SH AUTHOR
+svm
+
