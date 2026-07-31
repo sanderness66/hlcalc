@@ -39,6 +39,11 @@ func main() {
 		}
 	}
 
+	if c+r+f == 0 {
+		println("bad arg")
+		os.Exit(1)
+	}
+
 	if f == 0 { // calc f from r, c
 		f = 1 / (2 * math.Pi * c * r)
 
