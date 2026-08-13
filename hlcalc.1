@@ -1,22 +1,22 @@
-.TH hcalc 1 31-JUL-2026 "Kozmix Go"
+.TH hlcalc 1 31-JUL-2026 "Kozmix Go"
 
 .SH NAME
-hcalc \- calculate capacitance, resistance and/or frequency of high pass or low pass filters
+hlcalc \- calculate capacitance, resistance and/or cut-off frequency of
+high-pass or low-pass filters
 
 .SH SYNOPSIS
-.B hcalc
+.B hlcalc
 [C=val] [R=val] [F=val]
 
 .SH DESCRIPTION
-.BR hcalc,
-given any two out of capacitance, resistance or frequency, will calculate the
-other two values. You must call
-.B hcalc
+.BR hlcalc,
+given any two out of capacitance, resistance or cut-off frequency, will
+calculate the other two values. You must call
+.B hlcalc
 with exactly two arguments.
 
 .SH OPTIONS
-
-.B hcalc
+.B hlcalc
 accepts SI prefixes (k, M, μ etc.) as part of its command line
 options, which are:
 
@@ -43,4 +43,3 @@ frequency    F = 72.34 Hz
 
 .SH AUTHOR
 svm
-
